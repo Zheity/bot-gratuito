@@ -1,5 +1,10 @@
 const fs = require("fs")
 
+//////////////////////////////
+// BY: 24001#0001 ///////////
+// Não mexa em nada aqui! //
+///////////////////////////
+
 module.exports = async (client) => {
 
 const SlashsArray = []
