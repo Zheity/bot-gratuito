@@ -1,8 +1,13 @@
 const Discord = require("discord.js")
 
+////////////////////////////
+/// BY: 24001#0001 ////////
+//////////////////////////
+
+
 module.exports = {
   name: "tickets", // Coloque o nome do comando
-  description: "Ative o sistema de ticket no servidor - DeluxeCodes.", // Coloque a descrição do comando
+  description: "Ative o sistema de ticket no servidor", // Coloque a descrição do comando
   type: Discord.ApplicationCommandType.ChatInput,
   options: [
     {
