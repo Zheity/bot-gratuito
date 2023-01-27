@@ -15,11 +15,6 @@ module.exports = {
         .setCustomId("Ver")
         .setEmoji('✅')
         .setStyle(Discord.ButtonStyle.Success),
-       new Discord.ButtonBuilder()
-       .setCustomId("Duvida")//i
-       .setLabel(`・Dúvida`)
-       .setEmoji('🧠')
-       .setStyle(Discord.ButtonStyle.Danger)//f
        )      
        let embed = new Discord.EmbedBuilder()
        .setTitle(`Bem-Vindo`)
@@ -33,15 +28,13 @@ module.exports = {
         client.on('interactionCreate', (interaction) => {
           if(interaction.isButton) {
             if (interaction.customId === "Ver") {
-              let cargo1 = "1054849246085529700"
-              let cargo2 = "1059214907624665088"
+              let cargo1 = "COLOQUE O ID DO CARGO"
               let embedVerificado = new Discord.EmbedBuilder()
-                .setDescription(`**✅ Você foi verificado com o cargo <@&${cargo1}> é o cargo <@&${cargo2}>!**`)
+                .setDescription(`**✅ Você foi verificado com o cargo <@&${cargo1}>**`)
                 .setColor("Green") 
 
                 interaction.reply({ embeds: [embedVerificado], ephemeral: true})
                 interaction.member.roles.add(`${cargo1}`)
-                interaction.member.roles.add(`${cargo2}`)
               let EmbedLogV = new Discord.EmbedBuilder()
                .setTitle(`✅・Um usuário se verificou`)
                .setThumbnail(client.user.displayAvatarURL())
@@ -54,18 +47,10 @@ module.exports = {
                  },
                )
                .setTimestamp()
-               interaction.guild.channels.cache.get('1059569161770110996').send({ embeds: [EmbedLogV] })  
+               interaction.guild.channels.cache.get('ID DO CANAL PARA ENVIO DAS LOGS').send({ embeds: [EmbedLogV] })  
 
-              } else if(interaction.customId === "Duvida") {
-                let embedDuvida1 = new Discord.EmbedBuilder()
-                .setDescription(`**Irmão só clicar no botão ✅**`)
-                .setColor("Red") 
-                .setTimestamp()
-                interaction.reply({ content: `✅ Mensagem enviada!`, ephemeral: true })
-                interaction.channel.send({ embeds: [embedDuvida1], ephemeral: true})
-              }
-              }     
-       });
+       
+       }});
       })
     }
    }        
