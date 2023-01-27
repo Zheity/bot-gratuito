@@ -56,7 +56,7 @@ module.exports = {
                interaction.guild.channels.cache.get('ID DO CANAL PARA ENVIO DAS LOGS').send({ embeds: [EmbedLogV] })  
 
        
-       }});
+                }}});
       })
     }
    }        
