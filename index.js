@@ -1,3 +1,8 @@
+//////////////////////////////////////////////////////////////
+// BY: 24001#0001 ///////////////////////////////////////////
+// Não mexa em nada aqui caso não saiba oque esta fazendo //
+///////////////////////////////////////////////////////////
+
 const Discord = require("discord.js");
 const fs = require("fs");
 const ms = require("ms");
@@ -157,11 +162,10 @@ client.on("interactionCreate", async (interaction) => {
   
   
   let status = [
-    `🔥🚀 Feito pela DeluxeCodes!`,
+    `🔥🚀 Feito pelo 24001#0001`,
     `🔥🚀 Meus comandos são em slash {/}`,
-    `🔥🚀 Sou o bot oficial deste servidor!`,
-    `🔥🚀 IP: wazemc.com.br`,
-    `🔥🚀 SITE: https://wazemc.com.br/`,
+    `🔥🚀 Sou um bot gratuito!`,
+    `🔥🚀 SITE: https://dazzbot.com/`,
   ]
   i = 0
   
