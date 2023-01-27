@@ -1,5 +1,10 @@
 const Discord = require("discord.js")
 
+///////////////////////////////
+/// BY: 24001#0001 ///////////
+/////////////////////////////
+// Não mexa em nada aqui! //
+///////////////////////////
 module.exports = {
   name: "anunciar", 
   description: "Anuncie algo em um canal. ", 
