@@ -1,10 +1,16 @@
 # bot-gratuito
+
+**/////////////////////**
+**// BY: 24001#0001 //**
+**///////////////////**
+
+
 **Um bot para seu servidor!**
 
 **Comandos:**
-* anunciar
-* ticket
-* captcha
+* anunciar // Não tem nada para mexer //
+* ticket // Não tem nada para mexer //
+* captcha // mexer no id do canal de logs e no id do cargo //
 
 **Todos os comandos são em SlashCommands {/}**
 
