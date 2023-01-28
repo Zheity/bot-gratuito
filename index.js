@@ -1,7 +1,9 @@
 //////////////////////////////////////////////////////////////
 // BY: 24001#0001 ///////////////////////////////////////////
 // Não mexa em nada aqui caso não saiba oque esta fazendo //
-///////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////////////////////
+// Na parte // ticket // mexa somente no final dela lá no id do canal //
+///////////////////////////////////////////////////////////////////////
 
 const Discord = require("discord.js");
 const fs = require("fs");
@@ -138,8 +140,12 @@ client.on("interactionCreate", async (interaction) => {
             .setDescription(`Ticket de ${topic}\`(${channel})\` \n Deletado por ${interaction.user}\`(${interaction.user.id})\``)
             .setColor("#8d00ff")
             .setTimestamp()
+
+//////////////////////////////////////
+// Mexa nesta parte aqui de baixo! //
+////////////////////////////////////
     
-            interaction.guild.channels.cache.get('1059526059273506876').send({ //ID DO CANAL QUE AS LOG SERA ENVIADA
+            interaction.guild.channels.cache.get('Id do canal!').send({
               embeds: [embed],
               files: [attachment],
             })
