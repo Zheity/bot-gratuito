@@ -29,5 +29,5 @@ Coloque o token do seu bot no arquivo config.json!
 * npm i ms
 * nmp i discord-html-transcripts
 
-
+ligue o bot com node . no seu terminal
 
